@@ -1,0 +1,47 @@
+/* Inheritance */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* Header and Footer same background */
+header, footer{
+    background-color: lightgray;
+    padding: 10px;
+}
+
+/* Class selector */
+.site-title{
+    color: darkblue;
+}
+
+/* ID selector */
+#my-image{
+    box-shadow: 0 0 2px 1px black;
+}
+
+/* Hobby bullets square */
+#hobbies{
+    list-style-type: square;
+}
+
+/* nth-child odd background */
+#hobbies li:nth-child(odd){
+    background-color: #f2f2f2;
+}
+
+/* Navigation styling */
+nav a{
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: lightblue;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+
+/* Hover and focus state */
+nav a:hover,
+nav a:focus{
+    background-color: darkblue;
+    color: white;
+}
