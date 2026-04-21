@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
     <title>Three Star Media</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+<!--  HEADER  -->
+
 <header class="header">
 
-    <img src="images/logo.png.png" alt="logo">
+    <img src="images/logo.png.png" alt="Three Star Media Logo">
 
     <nav class="nav">
         <ul>
@@ -27,66 +34,73 @@
 
 </header>
 
-<main>
+<!--  HERO  -->
 
-<!-- HERO -->
 <section class="hero">
     <div class="hero-container">
-        <img src="images/main-banner.jpg.jpg">
+
+        <img src="images/main-banner.jpg.jpg" alt="Office workspace">
 
         <div class="hero-text">
-            <h1>Welcome to Three Star Media</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#">Connect with us</a>
+            <div class="hero-box">
+                <h1>Welcome to Three Star Media</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#" class="btn-gold">Connect with us ►</a>
+            </div>
         </div>
+
     </div>
 </section>
 
-<!-- ABOUT -->
+<!--  ABOUT  -->
+
 <section class="about">
     <div class="about-container">
-        <img src="images/about-us.jpg.jpg">
+
+        <img src="images/about-us.jpg.jpg" alt="Office meeting">
 
         <div>
             <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
+
     </div>
 </section>
 
-<!-- SERVICES -->
+<!--  SERVICES  -->
+
 <section class="services">
     <h2>Our Services</h2>
 
     <div class="services-container">
 
         <div class="service-card">
-            <img src="images/digital.jpg.jpg">
+            <img src="images/digital.jpg.jpg" alt="Digital transformation">
             <h3>Digital Transformation</h3>
             <a href="#">Digital Plans</a>
         </div>
 
         <div class="service-card">
-            <img src="images/marketing.jpg.jpg">
+            <img src="images/marketing.jpg.jpg" alt="Marketing analytics">
             <h3>Marketing</h3>
             <a href="#">Marketing Plans</a>
         </div>
 
         <div class="service-card">
-            <img src="images/video.jpg.jpg">
+            <img src="images/video.jpg.jpg" alt="Video production">
             <h3>Video Production</h3>
             <a href="#">Video Plans</a>
         </div>
 
         <div class="service-card">
-            <img src="images/web.jpg.jpg">
+            <img src="images/web.jpg.jpg" alt="Web development">
             <h3>Web Development</h3>
             <a href="#">Web Plans</a>
         </div>
 
         <div class="service-card">
-            <img src="images/print.jpg.jpg">
+            <img src="images/print.jpg.jpg" alt="Print media">
             <h3>Print</h3>
             <a href="#">Print Plans</a>
         </div>
@@ -95,24 +109,28 @@
 </section>
 
 <!-- VISION -->
+
 <section class="vision">
     <div class="vision-container">
-        <img src="images/vision.jpg.jpg">
+
+        <img src="images/vision.jpg.jpg" alt="Creative concept">
 
         <div class="vision-text">
             <h2>Our Vision</h2>
             <p>Lorem ipsum dolor sit amet.</p>
             <a href="#">Learn More</a>
         </div>
+
     </div>
 </section>
 
-<!-- TEAM -->
+<!--  TEAM  -->
+
 <section class="team">
     <h2>Our Team</h2>
 
     <div class="team-member">
-        <img src="images/john.jpg">
+        <img src="images/john.jpg" alt="John Doe">
         <div>
             <h3>John Doe</h3>
             <p>CEO and Co-owner</p>
@@ -124,48 +142,51 @@
             <h3>Bob Rite</h3>
             <p>CFO and Co-owner</p>
         </div>
-        <img src="images/bob.jpg.jpg">
+        <img src="images/bob.jpg.jpg" alt="Bob Rite">
     </div>
 </section>
 
-<!-- CONTACT -->
+<!--  CONTACT -->
+
 <section class="contact">
 
     <h2>Contact Us</h2>
 
     <div class="contact-wrapper">
 
+        <!-- FORM -->
         <div class="contact-form">
             <h3>Send us a message</h3>
 
             <form>
-                <label>Full Name</label><br>
-                <input type="text"><br><br>
+                <label for="name">Full Name</label>
+                <input id="name" type="text">
 
-                <label>Email</label><br>
-                <input type="email"><br><br>
+                <label for="email">Email</label>
+                <input id="email" type="email">
 
-                <label>Message</label><br>
-                <textarea></textarea><br><br>
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
 
-                <button>Send</button>
+                <button type="submit">Send</button>
             </form>
         </div>
 
+        <!-- MAP -->
         <div class="contact-map">
             <h3>Location</h3>
 
             <iframe 
                 src="https://www.google.com/maps?q=Algonquin+College+Ottawa&output=embed"
                 width="100%" 
-                height="300" 
+                height="300"
                 style="border:0;">
             </iframe>
-
         </div>
 
     </div>
 
+    <!-- HOURS -->
     <div class="hours">
         <h3>Hours of Operation</h3>
 
@@ -187,7 +208,7 @@
 
 </section>
 
-</main>
+<!-- FOOTER -->
 
 <footer>
     <p>© Three Star Media</p>
